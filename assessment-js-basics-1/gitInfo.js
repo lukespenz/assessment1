@@ -9,7 +9,9 @@
     It should be a string containing your best definition of what Git is.
 */
 
-//CODE HERE
+var gitDefinition = `Git is a free open-source software which places a tracker in your files and saves their progress.
+Often used for team projects in order to keep a log history of changes made to your code so you can find out
+where bugs started to occur and aids in the recovery of past versions.`
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +19,18 @@
     It should be a string containing your best definition of what GitHub is.
 */
 
-//CODE HERE
+var = gitHubDefinition = `GitHub is the website which allows individuals and companies to build, ship, and maintain software.
+It's a place you can easily find other coder's projects and save your own. The prime purpose of gitHub is to track changes
+to your coding projects and share them with others so when you run into bugs, you can restore previous verisions to see where
+they occured.
+
+You save your projects to GitHub by saving a new
+repository in the website and then uploading an existing local repository from your computer using:
+"git remote add origin[DesiredGitHubRepositoryLink]"
+"git branch -M main"
+"git push -u origin main"
+You can can continue saving updated verisions of your local repository to GitHub using the command: "git push" after
+adding and committing updated verisions to your local repository.`
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -25,7 +38,8 @@
     It should be a string containing your best definition of what 'git init' does.
 */
 
-//CODE HERE
+var gitInitDefinition = `git init sets up a local new repository in your files where you can update changes made to your code.
+You need to start with this before logging changes to your code.`
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -33,7 +47,7 @@
     It should be a string containing your best definition of what 'git clone' does.
 */
 
-//CODE HERE
+var gitCloneDefinition = `Makes a copy of an existing remote library`
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -41,7 +55,7 @@
     It should be a string containing your best definition of what 'git status' does.
 */
 
-//CODE HERE
+var gitStatusDefinition = `Tells you what files are new or have been changed since your last commit.`
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -52,7 +66,8 @@
     It should be a string containing the code to add all files.
 */
 
-//CODE HERE
+var gitAddDefinition = `adds all changes to the staging area before being committed.`
+var gitAddCode = 'git add .'
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -63,7 +78,8 @@
     It should be a string containing the code to commit using the message "initial commit".
 */
 
-//CODE HERE
+var gitCommitDefinition = `Officially saves/logs changes to local repository.`
+var gitCommitCode = 'git commit -m "<insert message>"'
 
 
 //////////////////PROBLEM 8////////////////////
@@ -72,4 +88,5 @@
     It should be a string containing your best definition of what 'git push' does.
 */
 
-//CODE HERE
+var gitPushDefinition = `Publishes your commits from your local repository to your remote repository on GitHub.com.`
+var gitPushCode = 'git push' (you didnt ask for it, but you got it anyways)
