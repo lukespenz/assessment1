@@ -16,9 +16,33 @@ reader.question("Please enter password: ", function(input){
 	tokens = input.split(' ');
 
     if(input.length < 10){
-        console.log('Error: Password too short. Minimum 10 characters.');
-    } else{
-        console.log('Password Successful')
-    };
+        console.log(`
+        ███████  █████  ██ ██          ███    ███ ██    ██ ███████ ████████     ██████  ███████           
+        ██      ██   ██ ██ ██          ████  ████ ██    ██ ██         ██        ██   ██ ██                
+        █████   ███████ ██ ██          ██ ████ ██ ██    ██ ███████    ██        ██████  █████             
+        ██      ██   ██ ██ ██          ██  ██  ██ ██    ██      ██    ██        ██   ██ ██                
+        ██      ██   ██ ██ ███████     ██      ██  ██████  ███████    ██        ██████  ███████           
+                                                                                                          
+                                                                                                          
+         ██  ██████       ██████ ██   ██  █████  ██████   █████   ██████ ████████ ███████ ██████  ███████ 
+        ███ ██  ████     ██      ██   ██ ██   ██ ██   ██ ██   ██ ██         ██    ██      ██   ██ ██      
+         ██ ██ ██ ██     ██      ███████ ███████ ██████  ███████ ██         ██    █████   ██████  ███████ 
+         ██ ████  ██     ██      ██   ██ ██   ██ ██   ██ ██   ██ ██         ██    ██      ██   ██      ██ 
+         ██  ██████       ██████ ██   ██ ██   ██ ██   ██ ██   ██  ██████    ██    ███████ ██   ██ ███████ 
+         `);
+    } else if(input.includes('~')){
+        console.log('Password cannot include "~" please try again.')
+    } else if(input.includes('`')){
+        console.log('Password cannot include "`" please try again.')
+    } else if(input.includes('|')){
+        console.log('Password cannot include "|" please try again.') 
+    } else {
+        console.log(`
+        ██     ██ ██ ███    ██ ███    ██ ███████ ██████  
+        ██     ██ ██ ████   ██ ████   ██ ██      ██   ██ 
+        ██  █  ██ ██ ██ ██  ██ ██ ██  ██ █████   ██████  
+        ██ ███ ██ ██ ██  ██ ██ ██  ██ ██ ██      ██   ██ 
+         ███ ███  ██ ██   ████ ██   ████ ███████ ██   ██ 
+         `)};
 	reader.close()
 });
