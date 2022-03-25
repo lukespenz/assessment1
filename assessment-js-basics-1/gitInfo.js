@@ -89,4 +89,4 @@ var gitCommitCode = 'git commit -m "<insert message>"'
 */
 
 var gitPushDefinition = `Publishes your commits from your local repository to your remote repository on GitHub.com.`
-var gitPushCode = 'git push' (you didnt ask for it, but you got it anyways)
+var gitPushCode = 'git push' (you didnt ask for it, but you got it anyways :P)
